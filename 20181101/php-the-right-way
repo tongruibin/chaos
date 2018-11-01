@@ -1,0 +1,263 @@
+[TOC]
+# PHP:The Right Way
+- [英文原版](https://phptherightway.com/ "Origin Version"){:target="_blank"}
+- [laravel中文翻译](https://phptherightway.golaravel.com/ "Laravel Chinese Version"){:target="_blank"}
+
+
+## 安装
+- Linux
+- Mac
+- [Windows](https://windows.php.net/download/ "Windows"){:target="_blank"}
+
+
+## 内置服务器
+- php -S localhost:8000
+- [了解更多](http://php.net/manual/zh/features.commandline.webserver.php "more"){:target="_blank"}
+
+
+## 代码风格
+### PHP-FIG： PHP Framework Interop Group
+- [PHP-FIG](https://www.php-fig.org/ "PHP-FIG"){:target="_blank"}
+- [PSR-1: Basic Coding Standard](https://www.php-fig.org/psr/psr-1/ "PSR-1"){:target="_blank"}
+- [PSR-2: Coding Style Guide](https://www.php-fig.org/psr/psr-2/ "PSR-2"){:target="_blank"}
+- [PSR-4: Autoloader](https://www.php-fig.org/psr/psr-4/ "PSR-4"){:target="_blank"}
+- [PEAR Standards](http://pear.php.net/manual/en/standards.php "PEAR Standards"){:target="_blank"}
+
+### Code Fix
+- [PHP_CodeSniffer](http://pear.php.net/package/PHP_CodeSniffer/ "PHP_CodeSniffer"){:target="_blank"}
+- [Fix Code](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Fixing-Errors-Automatically "Fix Code"){:target="_blank"}
+- [PHP Coding Standards Fixer](http://cs.sensiolabs.org/ "PHP Coding Standards Fixer"){:target="_blank"}
+
+
+## 语言亮点
+### 编程范式
+- 面向对象
+    - [面向对象](http://php.net/language.oop5 "OOP"){:target="_blank"}
+    - [Trait](http://php.net/language.oop5.traits "Trait"){:target="_blank"}
+- 函数式编程：递归，迭代，闭包，匿名函数
+    - [匿名函数](http://php.net/functions.anonymous "anonymous"){:target="_blank"}
+    - [闭包](http://php.net/class.closure "closure"){:target="_blank"}
+    - [闭包RFC](https://wiki.php.net/rfc/closures "closure RFC"){:target="_blank"}
+    - [回调](http://php.net/language.types.callable "callable"){:target="_blank"}
+    - [动态调用函数](http://php.net/function.call-user-func-array "call-user-func-array"){:target="_blank"}
+- 元编程：反射API，魔术方法
+    - [魔术方法](http://php.net/language.oop5.magic "magic"){:target="_blank"}
+    - [反射API](http://php.net/intro.reflection "reflection"){:target="_blank"}
+    - [重载](http://php.net/language.oop5.overloading "overloading"){:target="_blank"}
+
+### 命名空间
+- [命名空间](http://php.net/language.namespaces "namespaces"){:target="_blank"}
+- [PSR-4: Autoloader](https://www.php-fig.org/psr/psr-4/ "PSR-4"){:target="_blank"}
+
+### PHP 标准库Standard PHP Library（SPL）
+- [SPL](http://php.net/book.spl "SPL"){:target="_blank"}
+
+### 命令行接口
+- [命令行](http://php.net/features.commandline "commandline"){:target="_blank"}
+
+### Xdebug
+- [安装Xdebug](https://xdebug.org/docs/index.php?action=install "install Xdebug"){:target="_blank"}
+- [Xdebug Docs](https://xdebug.org/docs/ "Xdebug Docs"){:target="_blank"}
+
+
+## 依赖管理
+### Composer 与 Packagist
+- [Composer官网](https://getcomposer.org/ "Composer"){:target="_blank"}
+- [Composer安装](https://getcomposer.org/download/ "install Composer"){:target="_blank"}
+- [Security Advisories Checker](https://security.sensiolabs.org/ "Security Advisories Checker"){:target="_blank"}
+
+### PEAR
+- [PEAR官网](http://pear.php.net/ "PEAR"){:target="_blank"}
+- [PEAR安装](http://pear.php.net/manual/en/installation.getting.php "install PEAR"){:target="_blank"}
+- [PEAR Packages](http://pear.php.net/packages.php "Packages"){:target="_blank"}
+- [Composer 安装 PEAR](https://getcomposer.org/doc/05-repositories.md#pear "Composer install pear"){:target="_blank"}
+
+
+## 开发实践
+### 基础知识
+- [基础知识](https://phptherightway.com/pages/The-Basics.html "The-Basics"){:target="_blank"}
+
+### 日期和时间
+- [DateTime](http://php.net/book.datetime "datetime"){:target="_blank"}
+- [日期格式](http://php.net/function.date "date format"){:target="_blank"}
+- [DateTime API](https://carbon.nesbot.com/ "Carbon"){:target="_blank"}
+
+### 设计模式
+- [1](https://designpatternsphp.readthedocs.io/en/latest/ "1"){:target="_blank"}
+- [2](https://phptherightway.golaravel.com/pages/Design-Patterns.html "2"){:target="_blank"}
+
+### UTF-8
+- PHP层面：mb_*函数或扩展
+- 数据库层面：utf8mb4
+- 浏览器层面：mb_http_output()
+
+### 国际化 (i18n) 与本地化 (l10n)
+
+
+## 依赖注入
+- 控制反转
+- 依赖反转准则
+- 依赖注入容器
+
+
+## 数据库
+### MySQL 扩展
+- [mysqli](http://php.net/mysqli "mysqli"){:target="_blank"}
+- [pdo](http://php.net/pdo "pdo"){:target="_blank"}
+
+## 使用模板
+### 原生模板
+- [Plates](http://platesphp.com/ "plates"){:target="_blank"}
+
+### 编译型模板
+- [Twig](https://twig.symfony.com/ "twig"){:target="_blank"}
+- [Brainy](https://github.com/box/brainy "brainy"){:target="_blank"}
+- [Smarty](https://www.smarty.net/ "smarty"){:target="_blank"}
+
+## 错误与异常
+### 错误
+- 错误严重性：
+    - Error:程序会停止
+    - Notice
+    - Warning
+- 错误控制运算符[@](http://php.net/language.operators.errorcontrol "@"){:target="_blank"}：尽量不用
+- [错误异常类](http://php.net/manual/zh/class.errorexception.php "ErrorException"){:target="_blank"}
+
+### 异常
+- [SPL 异常](http://php.net/spl.exceptions "SPL exceptions"){:target="_blank"}
+
+## 安全
+### Web 安全
+- [OWASP](https://www.owasp.org/index.php/Guide_Table_of_Contents "owasp"){:target="_blank"}
+- [PHPSecurity](https://phpsecurity.readthedocs.io/en/latest/index.html "phpsecurity"){:target="_blank"}
+- [PHP Secure Guide](https://paragonie.com/blog/2017/12/2018-guide-building-secure-php-software "PHP Secure Guide"){:target="_blank"}
+
+### 密码哈希
+- [password_hash()](http://php.net/function.password-hash "password-hash"){:target="_blank"}
+- [password_hash RFC](https://wiki.php.net/rfc/password_hash "password_hash RFC"){:target="_blank"}
+
+### 数据过滤：永远不要信任外部输入
+filter_var()
+filter_input()
+strip_tags()
+htmlentities()
+htmlspecialchars()
+escapeshellarg()
+
+- [Filter](http://php.net/book.filter "Filter"){:target="_blank"}
+- [文件系统 NULL字符问题](http://php.net/security.filesystem.nullbytes "filesystem.nullbytes"){:target="_blank"}
+
+### 数据清理：删除（或转义）外部输入中的非法和不安全的字符
+- [Sanitize filters](http://php.net/filter.filters.sanitize "Sanitize filters"){:target="_blank"}
+
+### 反序列化：受信数据才可以unserialize()
+
+### 有效性验证：来确保外部输入的是你所想要的内容
+- [Validate filters](http://php.net/filter.filters.validate "Validate filters"){:target="_blank"}
+
+### 配置文件
+- 推荐你将你的配置信息存储在无法被直接通过文件系统读取和上传的位置上。
+- 如果你必须要存储配置文件在根目录下，那么请使用 .php 的扩展名来进行命名。这将可以确保即使脚本被直接访问到，它也不会被以普通文本的形式输出出来。
+- 配置文件中的信息需要被针对性的保护起来，对其进行加密或者设置访问权限。
+- 千万不要将包含敏感信息，例如密码或 API 令牌（token），的配置文件提交到源码仓库中。
+
+### 注册全局变量：register_globals = Off
+
+### 错误报告
+#### 开发环境
+    display_errors = On
+    display_startup_errors = On
+    error_reporting = -1
+    log_errors = On
+
+    不同 PHP 版本下开启全部错误显示
+    < 5.3 -1 或 E_ALL
+      5.3 -1 或 E_ALL | E_STRICT
+    > 5.3 -1 或 E_ALL
+
+#### 生产环境
+    display_errors = Off
+    display_startup_errors = Off
+    error_reporting = E_ALL
+    log_errors = On
+
+### 测试
+#### 测试驱动开发
+##### 单元测试
+- [业界标准](https://phpunit.de/ "PHPUnit"){:target="_blank"}
+
+##### 集成测试
+把各个模块组合在一起进行整体测试的软件测试阶段。
+它处于单元测试之后，验收测试之前。
+集成测试将已经经过了单元测试的模块做为输入模块，组合成一个整体，然后运行集成测试用例，然后输出一个可以进行系统测试的系统。
+
+##### 功能性测试
+通过使用工具来生成自动化的测试用例，然后在真实的系统上运行。
+而不是单元测试中简单的验证单个模块的正确性和集成测试中验证各个模块间交互的正确性。
+这些工具会使用代表性的真实数据来模拟真实用户的行为来验证系统的正确性。
+
+### 行为驱动开发
+有两种不同的行为驱动开发 (BDD): SpecBDD 和 StoryBDD。
+SpecBDD 专注于代码的技术行为，而 StoryBDD 专注于业务逻辑或功能的行为和互动。
+
+- [SpecBDD](http://www.phpspec.net/en/stable/ "SpecBDD"){:target="_blank"}
+- [StoryBDD](http://behat.org/en/latest/ "StoryBDD"){:target="_blank"}
+- [BDD](https://codeception.com/ "BDD"){:target="_blank"}
+
+### 其他测试工具
+- [浏览器自动化](https://www.seleniumhq.org/ "seleniumhq"){:target="_blank"}
+
+
+## 服务器与部署
+### nginx 和 PHP-FPM
+- [nginx](http://nginx.org/ "nginx"){:target="_blank"}
+- [PHP-FPM](http://php.net/install.fpm "PHP-FPM"){:target="_blank"}
+- [配置参考](https://nealpoole.com/blog/2011/04/setting-up-php-fastcgi-and-nginx-dont-trust-the-tutorials-check-your-configuration/ "配置参考"){:target="_blank"}
+
+### Apache 和 PHP
+prefork MPM : mode_php5
+worker MPM : mod_fastcgi
+event MPM : mod_fcgid
+mod_proxy_fcgi(Apache2.4)
+- [MPM](http://httpd.apache.org/docs/2.4/mod/mpm_common.html "MPM"){:target="_blank"}
+- [mod_fastcgi](https://blogs.oracle.com/opal/php-fpm-fastcgi-process-manager-with-apache-2 "mod_fastcgi"){:target="_blank"}
+- [mod_fcgid](http://httpd.apache.org/mod_fcgid/ "mod_fcgid"){:target="_blank"}
+- [mod_proxy_fcgi](https://httpd.apache.org/docs/current/mod/mod_proxy_fcgi.html "mod_proxy_fcgi"){:target="_blank"}
+- [Apache 和 PHP-FPM](https://serversforhackers.com/c/apache-and-php-fpm "apache-and-php-fpm"){:target="_blank"}
+
+### 部署工具
+- [Ant](http://ant.apache.org/ "Ant"){:target="_blank"}
+- [How to Ant](https://code.tutsplus.com/tutorials/automate-your-projects-with-apache-ant--net-18595 "How to Ant"){:target="_blank"}
+
+### 其他工具
+- [ansible](https://www.ansible.com/ "ansible"){:target="_blank"}
+- [puppet](https://puppet.com/ "puppet"){:target="_blank"}
+
+### 持续集成
+- [travis-ci](https://travis-ci.org/ "travis-ci"){:target="_blank"}
+
+
+## 虚拟化技术
+Vagrant 和 Docker
+    https://www.zhihu.com/question/32324376
+    先Docker
+### Vagrant
+- [rove](http://rove.io/ "rove"){:target="_blank"}
+- [puphpet](https://puphpet.com/ "puphpet"){:target="_blank"}
+
+### Docker
+
+## 缓存
+### Opcode 缓存
+- [OPcache](http://php.net/manual/en/internals2.opcodes.php "OPcache"){:target="_blank"}
+
+### 对象缓存
+- [Memcached](http://memcached.org/ "Memcached"){:target="_blank"}
+- [Redis](https://redis.io/ "Redis"){:target="_blank"}
+
+
+## 文档撰写
+- [参考PHPDoc](https://www.phpdoc.org/ "phpdoc"){:target="_blank"}
+
+## 框架
+- [热门框架](https://github.com/codeguy/php-the-right-way/wiki/Frameworks "Frameworks"){:target="_blank"}
